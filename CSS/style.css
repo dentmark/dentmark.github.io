@@ -1,0 +1,464 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+
+}
+
+
+/* 
+=============================
+===== ESTILOS GENERALES =====
+=============================
+*/
+body{
+    background-color: #0b0d20;
+    margin: 0px;
+    padding: 0px;
+}
+.font-normal{
+    font-weight: 400;
+}
+.font-thin{
+    font-weight: 100;
+}
+.font-bold{
+    font-weight: 900;
+}
+.contenedor{
+    padding: 0px;
+}
+
+
+/* 
+==========================
+=== ESTILOS DEL HEADER ===
+==========================
+*/
+
+.header{
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    box-sizing: border-box;
+    bottom: 0;
+    background-color: #060815be;
+    backdrop-filter: blur(16px);
+    display: flex;
+    border-top: 1px solid #222;
+    justify-content:space-around;
+    align-items:center;
+    box-shadow:0px 0px 10px #060815;
+    z-index: 100;
+}
+.header a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.header .div-icons{
+    padding: 10px;
+    display: flex;
+    width: 40px;
+    justify-content:center;
+    align-items: center;
+}
+
+.header .div-icons a i{
+    font-size: 25px;
+    color: #fff;
+    transition: color .3s;
+}
+.header .div-icons a p{
+    margin: 0px;
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: color .3s;
+}
+
+.header .div-icons a:hover i, .header .div-icons a:hover p{
+    color: #eec10c;
+}
+
+
+
+
+
+/* 
+==================
+= ESTILOS AL MAIN =
+==================
+*/
+
+.div-container{
+    width: 100%;
+    height: 100%;
+    background-color: #0b0d20;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+/* 
+====================
+=== SECTION HERO ===
+====================
+*/
+
+
+.section-titulo b{
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 0px 0px 3px #fff;
+}
+.section-titulo b span{
+    font-size: 15px;
+}
+
+.section-hero{
+    position: relative;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+
+.section-hero span, .section-hero h1{
+    font-size: 45px;
+    line-height: 50px;
+    margin: 0px;
+    padding: 0px;
+
+}
+.section-hero .span1{
+    font-size: 20px;
+}
+
+.section-hero p{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #eec10c;
+}
+
+.section-hero div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.section-hero div p{
+    color: #0b0d20;
+    font-weight: 900;
+    font-size: 16px;
+    width: 100%;
+    background-color: #fff;
+    padding: 5px 0px;
+    border-radius: 10px;
+}
+.section-hero div p i{
+    color: #0b0d20;
+}
+
+.section-hero .alert{
+    font-weight: 900;
+    border: 2px;
+    background-color: #0a2940;
+    border: 2px solid #38bdf8;
+    color: #fff;
+}
+
+
+/* otra de la seccion hero */
+
+
+.section-hero .text .move{
+    position: relative;
+    display: inline-block;
+    animation: animate 3s ease-in-out infinite;
+}
+@keyframes animate {
+    0%{
+        transform: translateY(0px);
+    }
+    15%{
+        transform: translateY(-3px);
+        text-shadow: 0px 0px 10px #eec10c;
+        
+    }
+   
+    25%,50%,100%{
+        transform: translateY(0px);
+    }
+}
+/* 
+=============================
+=== SECCION DE BIENVENIDA ===
+=============================
+*/
+
+.bienvenida-container{
+    width: 100%;
+    height: 100%;
+}
+
+.bienvenida-textos h2{
+    font-size: 30px;
+    font-weight: 700;
+    color:#eec10cf6;
+    margin-bottom: 0px;
+}
+
+.bienvenida-textos .badge{
+    background-color: #08070b;
+    font-size: 15px;
+    color: rgba(117, 189, 107, 0.912);
+}
+
+.bienvenida-textos p{
+    margin-top: 15px;
+    color: #ccc;
+    font-weight: 400;
+    font-size: 16px;
+}
+.bienvenida-textos .otro{
+    margin-top: 30px;
+    font-size: 15px;
+    color: #fff;
+}
+.bienvenida-textos p span{
+    color: #fff;
+    font-weight: 700;
+}
+.bienvenida-textos h3{
+    font-size: 25px;
+    font-weight: 900;
+    margin-top: 40px;
+    color: #eec10c;
+}
+
+.bienvenida-video{
+    width: 100%;
+}
+.bienvenida-video video{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.bienvenida-textos .alert{
+    font-weight: 400;
+    background-color: #eec10c5e;
+    border: none;
+    border-radius: none;
+    border-left: 3px solid #eec10c;
+    color: #fff;
+    box-shadow: 0px 0px 5px #eec10c;
+    font-size: 14px;
+    animation-fill-mode: backwards;
+}
+
+/* 
+===============================
+=== SECCION SIGUIENTE VIDEO ===
+===============================
+*/
+
+.bienvenida-enlace{
+    width: 100%;
+    padding:20px 0px;
+    border-top: 1px solid #222;
+    border-radius: 2px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.bienvenida-enlace a{
+    text-decoration: none;
+}
+.bienvenida-enlace .next-video{
+    font-size: 14px;
+    font-weight: 100;
+}
+.bienvenida-enlace .next-class{
+    font-size: 16px;
+    font-weight: 500;
+    transition: all .3s;
+}
+.bienvenida-enlace .next-class i{
+   
+    font-size: 10px;
+}
+.bienvenida-enlace a:hover .next-class i{
+    transition: all .3s;
+}
+.bienvenida-enlace a:hover .next-class,.bienvenida-enlace a:hover .next-class i {
+    color: #eec10c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+================================
+========= MEDIA QUERYS =========
+================================
+*/
+
+@media (min-width: 400px){
+    .main{
+        max-width: 450px;
+    }
+    .section-hero span, .section-hero h1{
+        font-size: 55px;
+    }
+    .section-hero .span1{
+        font-size: 30px;
+    }
+
+    .section-hero p{
+        font-size: 20px;
+    }
+
+    .bienvenida-textos h2{
+        font-size: 40px;
+    }
+    .bienvenida-textos p{
+        font-size: 18px;
+    }
+
+    @keyframes animate {
+        0%{
+            transform: translateY(0px);
+        }
+        15%{
+            transform: translateY(-7px);
+            text-shadow: 0px 0px 10px #eec10c;
+            
+        }
+       
+        25%,50%,100%{
+            transform: translateY(0px);
+        }
+    }
+}
+
+@media (min-width: 680px){
+    .body{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1fr;
+    }
+    .header{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        position: relative;
+        background-color:transparent;
+        backdrop-filter: none;
+        box-shadow: none;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+
+    }
+    .header .div-icons{
+        display: block;
+        width: auto;
+        margin-bottom: 10px;
+    }
+    .header .div-icons a{
+        display: flex;
+        flex-direction: row;
+        padding-left: 20px;
+    }
+
+    .header .div-icons a i{
+        margin-right: 20px;
+        color: #ddd;
+    }
+    .header .div-icons a p{
+        color: #ddd;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    main{
+        grid-column: 2/4;
+        grid-row: 1/2;
+    }
+
+    .bienvenida-enlace{
+        padding-bottom: 20px;
+    }
+
+   .main .section-titulo b{
+    position: absolute;
+    top:40px;
+    left: 40px;
+
+   }
+
+   .section-hero {
+    padding-top: 150px;
+   }
+}
+
+
+@media screen and (min-width: 900px) {
+    .main{
+        max-width: 650px;
+    }
+    .section-titulo b{
+        font-size: 50px;
+    }
+    .section-hero span, .section-hero h1{
+        font-size: 70px;
+        line-height: 70px;
+    }
+    .section-hero p{
+        font-size: 25px;
+    }
+
+    @keyframes animate {
+        0%{
+            transform: translateY(0px);
+        }
+        15%{
+            transform: translateY(-10px);
+            text-shadow: 0px 0px 10px #eec10c;
+            
+        }
+       
+        25%,50%,100%{
+            transform: translateY(0px);
+        }
+    }
+}

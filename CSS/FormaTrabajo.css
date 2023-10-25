@@ -1,0 +1,333 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+
+/* Estilos del body */
+
+body{
+    background-color: #0b0d20;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos del head */
+.head{
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    box-sizing: border-box;
+    bottom: 0;
+    background-color: #060815be;
+    backdrop-filter: blur(16px);
+    display: flex;
+    border-top: 1px solid #222;
+    justify-content:space-around;
+    align-items:center;
+    box-shadow:0px 0px 10px #060815;
+    z-index: 100;
+}
+.head a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.head .div-icons{
+    padding: 10px;
+    display: flex;
+    width: 40px;
+    justify-content:center;
+    align-items: center;
+}
+
+.head .div-icons a i{
+    font-size: 25px;
+    color: #fff;
+    transition: color .3s;
+}
+.head .div-icons a p{
+    margin: 0px;
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    transition: color .3s;
+}
+
+.head .div-icons a:hover i, .head .div-icons a:hover p{
+    color: #eec10c;
+}
+
+.logo{
+    display: none;
+    padding-left: 25px;
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+.logo b{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 900;
+    
+}
+.logo b span{
+    font-weight: 100;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+/* Estilos del header */
+.header{
+    background-color: #0b0d20;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0px 25px;
+    position: fixed;
+    z-index: 102;
+}
+.header a{
+    text-decoration: none;
+}
+
+.header a i{
+    padding: 10px;
+    border: 2px solid #eec10c;
+    border-radius: 10px;
+    margin-right: 10px;
+    color: #eec10c;
+}
+.header a span{
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.info .text-video{
+    margin-top:20px;
+}
+
+
+/* Estilos del Main */
+
+.main{
+    max-width: 800px;
+    padding:0px 25px;
+    padding-top: 80px;
+}
+.info .div-pago p{
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px;
+    border-left: 3px solid #fff;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.info .text-video-dos p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.info h2{
+    font-size: 50px;
+    font-weight: 900;
+    color: #eec10c;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.info .video video{
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+/* Textos  */
+
+.bienvenida-textos .alert{
+    font-weight: 700;
+    background-color: transparent;
+    border: none;
+    background-color: #060815;
+    border-radius: none;
+    border: 2px solid #eec10c;
+    box-shadow: 0px 0px 5px #eec10c;
+    color: #eec10c;
+    font-size: 16px;
+    margin: 30px 0px;
+    animation-fill-mode: backwards;
+}
+.info p{
+    margin-top: 15px;
+    color: #eee;
+    font-weight: 400;
+    font-size: 1em;
+}
+.info p span{
+    color: #fff;
+    font-weight: 700;
+}
+.text-video h3{
+    font-size: 25px;
+    font-weight: 900;
+    color: #eec10c;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.info .card{
+    margin: 40px 0px;
+    box-shadow: 0px 0px 5px #fff;
+}
+.info .card .card-body{
+    width: 100%;
+    background-color: #060815;
+    border:2px solid #fff;
+    border-radius: 10px;
+    position: relative;
+}
+.info .card .badge{
+    position: absolute;
+    top: -10px;
+    left: 30px;
+}
+.info .card h5{
+    color: #eec10c;
+    font-size: 25px;
+    font-weight: 900;
+    margin-top: 20px;
+}
+.info .card p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.info .card span{
+    font-size: 13px;
+    font-weight: 900;
+}
+.info ul li{
+    color: #fff;
+    font-size: 16px;
+    margin: 5px 0px;
+    font-weight: 700;
+}
+.text-video .pago-ul{
+    margin-top: 30px;
+}
+.text-video .pago-ul li{
+    margin: 15px 0px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.text-video .alert{
+    margin: 30px 0px;
+    font-weight: 700;
+    border: 2px;
+    background-color: #0a2940;
+    border: 2px solid #38bdf8;
+    color: #fff;
+}
+/* Estilos de los enlaces */
+
+.enlace{
+    width: 100%;
+    padding:20px 0px;
+    border-top: 1px solid #222;
+    border-radius: 2px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.enlace a{
+    text-decoration: none;
+}
+.enlace .next-video{
+    font-size: 14px;
+    font-weight: 100;
+}
+.enlace .next-class{
+    font-size: 16px;
+    font-weight: 500;
+    transition: all .3s;
+}
+.enlace .next-class i{
+    font-size: 10px;
+}
+.enlace a:hover .next-class i{
+    transition: all .3s;
+}
+.enlace a:hover .next-class,.bienvenida-enlace a:hover .next-class i {
+    color: #eec10c;
+}
+
+
+
+@media screen and (min-width:650px){
+    body{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1fr;
+    }
+    .head{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        position: relative;
+        background-color:transparent;
+        backdrop-filter: none;
+        box-shadow: none;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+
+    }
+    .head .div-icons{
+        display: block;
+        width: auto;
+        margin-bottom: 10px;
+    }
+    .head .div-icons a{
+        display: flex;
+        flex-direction: row;
+        padding-left: 20px;
+    }
+
+    .head .div-icons a i{
+        margin-right: 20px;
+        color: #ddd;
+    }
+    .head .div-icons a p{
+        color: #ddd;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .main{
+       padding: 0px px;
+    }
+    .contenedor{
+        grid-column: 2/4;
+        width: 100%;
+    }
+    .logo{
+        display: block;
+        text-shadow: 0px 0px 4px #fff;
+    }
+}
